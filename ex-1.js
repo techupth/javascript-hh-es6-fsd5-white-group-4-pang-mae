@@ -13,4 +13,9 @@ let additionalProperties = {
 
 // Start coding here
 
-console.log(newStudentProfile);
+function newStudentProfile (studentProfile, additionalProperties) {
+  return  {...studentProfile, ...additionalProperties};
+}
+
+console.log(newStudentProfile(studentProfile, additionalProperties));
+
