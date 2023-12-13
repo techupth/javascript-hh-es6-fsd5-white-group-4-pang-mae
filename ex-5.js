@@ -1,5 +1,10 @@
-function sum() {
+function sum(...numbers) {
   // Start coding here !
+  let result = 0;
+  for (let i = 0; i < numbers.length; i++) {
+    result += numbers[i];
+  }
+  return result;
 }
 
 let result1 = sum(1, 2, 3, 4, 5, 6, 7, 8);
